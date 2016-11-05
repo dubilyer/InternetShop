@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
 public class AccountApi {
-    @RequestMapping("/accounts")
+    @RequestMapping(value = "/accounts")
     public ResponseEntity<String> getAllAccounts(){
         return new ResponseEntity<String>("Success", HttpStatus.ACCEPTED);
     }
